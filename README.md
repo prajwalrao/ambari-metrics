@@ -6,8 +6,7 @@ Use **ambari-metrics** to visualize metrics exposed via AMS in Grafana.
 
  - [Install Grafana](#installg)
  - [Install Datasource Plugin](#installam)
- - [Create Dashboard](createdash)
- - 
+ - [Create Dashboard](#createdash)
 
 ----------
 ![enter image description here](screenshots/full-dashboard.png)

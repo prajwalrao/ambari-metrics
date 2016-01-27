@@ -1,1 +1,1 @@
-# ams-grafana
+# ambari-metrics

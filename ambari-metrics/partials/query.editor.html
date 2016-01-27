@@ -39,11 +39,11 @@
     <ul class="tight-form-list" role="menu">
 
         <li class="tight-form-item" style="width: 86px">
-        AppID
+        Component
     </li>
         <li>
             <input type="text" class="input-large tight-form-input" ng-model="target.app"
-                   spellcheck='false' bs-typeahead="suggestApps" placeholder="AppId" data-min-length=0 data-items=100
+                   spellcheck='false' bs-typeahead="suggestApps" placeholder="Component Name" data-min-length=0 data-items=100
                    ng-blur="targetBlur()">
             </input>
             <a bs-tooltip="target.errors.metric" style="color: rgb(229, 189, 28)" ng-show="target.errors.metric">

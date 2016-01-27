@@ -7,7 +7,7 @@ define([
 
       var module = angular.module('grafana.controllers');
 
-      module.controller('AmsQueryCtrl', function($scope) {
+      module.controller('AmbariMetricsQueryCtrl', function($scope) {
 
         $scope.init = function() {
           $scope.target.errors = validateTarget($scope.target);

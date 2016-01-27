@@ -1,13 +1,13 @@
 {
   "pluginType": "datasource",
-  "name": "Ams",
+  "name": "AmbariMetrics",
 
-  "type": "ams",
-  "serviceName": "AmsDatasource",
+  "type": "ambarimetrics",
+  "serviceName": "AmbariMetricsDatasource",
 
-  "module": "app/plugins/datasource/ams/datasource",
+  "module": "app/plugins/datasource/ambari-metrics/datasource",
     "partials": {
-    "config": "app/plugins/datasource/ams/partials/config.html"
+    "config": "app/plugins/datasource/ambari-metrics/partials/config.html"
   },
 
   "metrics": true

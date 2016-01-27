@@ -10,19 +10,18 @@ define([
 
       var module = angular.module('grafana.services');
 
-      module.factory('AmsDatasource', function ($q, backendSrv) {
+      module.factory('AmbariMetricsDatasource', function ($q, backendSrv) {
         /**
          * AMS Datasource Constructor
          */
-        function AmsDatasource(datasource) {
+        function AmbariMetricsDatasource(datasource) {
           this.name = datasource.name;
           this.url = datasource.url;
           this.initMetricAppidMapping();
-          debugger;
         }
         var allMetrics = [];
         var appIds = [];
-        AmsDatasource.prototype.initMetricAppidMapping = function () {
+        AmbariMetricsDatasource.prototype.initMetricAppidMapping = function () {
           backendSrv.get(this.url + '/ws/v1/timeline/metrics/metadata')
             .then(function (items) {
               allMetrics = [];
@@ -45,7 +44,7 @@ define([
         /**
          * AMS Datasource  Authentication
          */
-        AmsDatasource.prototype.doAmbariRequest = function (options) {
+        AmbariMetricsDatasource.prototype.doAmbariRequest = function (options) {
           if (this.basicAuth || this.withCredentials) {
             options.withCredentials = true;
           }
@@ -63,7 +62,7 @@ define([
         /**
          * AMS Datasource  Query
          */
-        AmsDatasource.prototype.query = function (options) {
+        AmbariMetricsDatasource.prototype.query = function (options) {
           var emptyData = function (metric) {
             return {
               data: {
@@ -143,7 +142,7 @@ define([
         /**
          * AMS Datasource  List Series.
          */
-        AmsDatasource.prototype.listSeries = function (query) {
+        AmbariMetricsDatasource.prototype.listSeries = function (query) {
           // wrap in regex
           if (query && query.length > 0 && query[0] !== '/') {
             query = '/' + query + '/';
@@ -157,7 +156,7 @@ define([
          * Added Check to see if Datasource is working. Throws up an error in the
          * Datasources page if incorrect info is passed on.
          */
-        AmsDatasource.prototype.testDatasource = function () {
+        AmbariMetricsDatasource.prototype.testDatasource = function () {
           return backendSrv.datasourceRequest({
             url: this.url + '/ws/v1/timeline/metrics/metadata',
             method: 'GET'
@@ -174,7 +173,7 @@ define([
          *
          * Read AppIds from cache.
          */
-        AmsDatasource.prototype.suggestApps = function (query) {
+        AmbariMetricsDatasource.prototype.suggestApps = function (query) {
           console.log(query);
 
           appIds = appIds.sort();
@@ -189,7 +188,7 @@ define([
          *
          * Read Metrics based on AppId chosen.
          */
-        AmsDatasource.prototype.suggestMetrics = function (query, app) {
+        AmbariMetricsDatasource.prototype.suggestMetrics = function (query, app) {
           if (!app) {
             return $q.when([]);
           }
@@ -210,7 +209,7 @@ define([
          *
          * Query Hosts on the cluster.
          */
-        AmsDatasource.prototype.suggestHosts = function (query) {
+        AmbariMetricsDatasource.prototype.suggestHosts = function (query) {
           console.log(query);
           return this.doAmbariRequest({method: 'GET', url: '/ws/v1/timeline/metrics/hosts'})
             .then(function (results) {
@@ -225,7 +224,7 @@ define([
          * AMS Datasource Aggregators.
          */
         var aggregatorsPromise = null;
-        AmsDatasource.prototype.getAggregators = function () {
+        AmbariMetricsDatasource.prototype.getAggregators = function () {
           if (aggregatorsPromise) {
             return aggregatorsPromise;
           }
@@ -235,7 +234,7 @@ define([
           return aggregatorsPromise;
         };
 
-        return AmsDatasource;
+        return AmbariMetricsDatasource;
       });
     }
 );

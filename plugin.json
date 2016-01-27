@@ -1,0 +1,14 @@
+{
+  "pluginType": "datasource",
+  "name": "Ams",
+
+  "type": "ams",
+  "serviceName": "AmsDatasource",
+
+  "module": "app/plugins/datasource/ams/datasource",
+    "partials": {
+    "config": "app/plugins/datasource/ams/partials/config.html"
+  },
+
+  "metrics": true
+}

@@ -13,7 +13,8 @@ Use **ambari-metrics** to visualize metrics exposed via AMS in Grafana.
 ![enter image description here](screenshots/full-dashboard.png)
 
 ----------
-Install Grafana<a name="installg"></a>
+<a name="installg"></a>
+Install Grafana
 ---------------
 
 You can install Grafana on any host.  It does not need to be co-located with Ambari Server.  The only requirement is that it has network access to Ambari Server.
@@ -34,8 +35,8 @@ Install on SUSE/SLES:
 ```
 sudo rpm -i --nodeps grafana-2.6.0-1.x86_64.rpm
 ```
-
-Deploy ambari-metrics <a name="installam"></a> 
+<a name="installam"></a> 
+Deploy ambari-metrics 
 ---
 ```
 sudo wget https://github.com/u39kun/ambari-grafana/raw/master/dist/ambari-grafana.tgz
@@ -49,6 +50,7 @@ sudo service grafana-server start
 ```
 
 ----------
-Create Ambari Metrics Data Source in Grafana UI <a name="createdash"></a>
+<a name="createdash"></a>
+Create Ambari Metrics Data Source in Grafana UI 
 ---
 ![enter image description here](screenshots/add-dashboard.png)

@@ -8,12 +8,12 @@ function (angular) {
   module.directive('metricQueryEditorAmbarimetrics', function() {
     return {
       controller: 'AmbariMetricsQueryCtrl',
-      templateUrl: 'app/plugins/datasource/ams/partials/query.editor.html',
+      templateUrl: 'app/plugins/datasource/ambari-metrics/partials/query.editor.html',
     };
   });
 
   module.directive('metricQueryOptionsAmbarimetrics', function() {
-    return {templateUrl: 'app/plugins/datasource/ams/partials/query.options.html'};
+    return {templateUrl: 'app/plugins/datasource/ambari-metrics/partials/query.options.html'};
   });
 
 });

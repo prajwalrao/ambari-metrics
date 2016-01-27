@@ -12,4 +12,8 @@ function (angular) {
     };
   });
 
+  module.directive('metricQueryOptionsAms', function() {
+    return {templateUrl: 'app/plugins/datasource/ams/partials/query.options.html'};
+  });
+
 });

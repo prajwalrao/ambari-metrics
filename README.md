@@ -38,8 +38,8 @@ sudo rpm -i --nodeps grafana-2.6.0-1.x86_64.rpm
 Deploy ambari-metrics 
 ---
 ```
-sudo wget https://github.com/u39kun/ambari-grafana/raw/master/dist/ambari-grafana.tgz
-sudo tar zxvf ambari-grafana.tgz -C /usr/share/grafana/public/app/plugins/datasource
+sudo wget https://github.com/prajwalrao/ambari-metrics/raw/master/dist/ambari-metrics.tar.gz
+sudo tar zxvf ambari-metrics.tgz -C /usr/share/grafana/public/app/plugins/datasource
 ```
 
 Start Grafana

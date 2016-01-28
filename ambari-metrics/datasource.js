@@ -104,52 +104,61 @@ define([
           };
           var precisionSetting = '';
           var getHostAppIdData = function(target) {
-            if (target.shouldAddPrecision) { precisionSetting = '&precision=' + target.precision;
-              } else { precisionSetting = ''; }
+            if (target.shouldAddPrecision) {
+              precisionSetting = '&precision=' + target.precision;
+            } else {
+              precisionSetting = '';
+            }
             if (target.shouldAddPrecision && target.shouldComputeRate) {
-              return backendSrv.get(self.url + '/ws/v1/timeline/metrics?metricNames=' + target.metric + "._rate._" + target.aggregator + "&hostname=" +
-                  target.hosts + '&appId=' + target.app + '&startTime=' + from + '&endTime=' + to + precisionSetting).then(
+              return backendSrv.get(self.url + '/ws/v1/timeline/metrics?metricNames=' + target.metric + "._rate._"
+                + target.aggregator + "&hostname=" + target.hosts + '&appId=' + target.app + '&startTime=' + from
+                + '&endTime=' + to + precisionSetting).then(
                   getMetricsData(target)
                 );
             } else if (target.shouldComputeRate) {
-              return backendSrv.get(self.url + '/ws/v1/timeline/metrics?metricNames=' + target.metric + "._rate._" + target.aggregator + "&hostname=" +
-                  target.hosts + '&appId=' + target.app + '&startTime=' + from + '&endTime=' + to).then(
+              return backendSrv.get(self.url + '/ws/v1/timeline/metrics?metricNames=' + target.metric + "._rate._"
+                + target.aggregator + "&hostname=" + target.hosts + '&appId=' + target.app + '&startTime=' + from
+                + '&endTime=' + to).then(
                   getMetricsData(target)
                 );
-            } else if (target.shouldAddPrecision){ 
-              return backendSrv.get(self.url + '/ws/v1/timeline/metrics?metricNames=' + target.metric + "._" + target.aggregator + "&hostname=" +
-                  target.hosts + '&appId=' + target.app + '&startTime=' + from + '&endTime=' + to + precisionSetting).then(
+            } else if (target.shouldAddPrecision){
+              return backendSrv.get(self.url + '/ws/v1/timeline/metrics?metricNames=' + target.metric + "._"
+                + target.aggregator + "&hostname=" + target.hosts + '&appId=' + target.app + '&startTime=' + from
+                + '&endTime=' + to + precisionSetting).then(
                   getMetricsData(target)
                 );
             } else {
-              return backendSrv.get(self.url + '/ws/v1/timeline/metrics?metricNames=' + target.metric + "._" + target.aggregator + "&hostname=" +
-                target.hosts + '&appId=' + target.app + '&startTime=' + from + '&endTime=' + to).then(
+              return backendSrv.get(self.url + '/ws/v1/timeline/metrics?metricNames=' + target.metric + "._"
+                + target.aggregator + "&hostname=" + target.hosts + '&appId=' + target.app + '&startTime=' + from
+                + '&endTime=' + to).then(
                 getMetricsData(target)
               );
-            } 
+            }
           };
 
           var getServiceAppIdData = function(target) {
             if (target.shouldAddPrecision) { precisionSetting = '&precision=' + target.precision;
-              } else { precisionSetting = ''; }
+            } else { precisionSetting = ''; }
             if (target.shouldAddPrecision && target.shouldComputeRate) {
-              return backendSrv.get(self.url + '/ws/v1/timeline/metrics?metricNames=' + target.metric + "._rate._" + target.aggregator + '&appId=' +
-                target.app + '&startTime=' + from + '&endTime=' + to + precisionSetting).then(
+              return backendSrv.get(self.url + '/ws/v1/timeline/metrics?metricNames=' + target.metric + "._rate._"
+                + target.aggregator + '&appId=' + target.app + '&startTime=' + from + '&endTime=' + to + precisionSetting)
+              .then(
                 getMetricsData(target)
               );
             } else if (target.shouldAddPrecision) {
-              return backendSrv.get(self.url + '/ws/v1/timeline/metrics?metricNames=' + target.metric + "._" + target.aggregator + '&appId=' +
-                target.app + '&startTime=' + from + '&endTime=' + to + precisionSetting).then(
+              return backendSrv.get(self.url + '/ws/v1/timeline/metrics?metricNames=' + target.metric + "._"
+                + target.aggregator + '&appId=' + target.app + '&startTime=' + from + '&endTime=' + to + precisionSetting)
+              .then(
                 getMetricsData(target)
               );
             } else if (target.shouldComputeRate) {
-              return backendSrv.get(self.url + '/ws/v1/timeline/metrics?metricNames=' + target.metric + "._rate._" + target.aggregator + '&appId=' +
-                target.app + '&startTime=' + from + '&endTime=' + to).then(
+              return backendSrv.get(self.url + '/ws/v1/timeline/metrics?metricNames=' + target.metric + "._rate._"
+                + target.aggregator + '&appId=' + target.app + '&startTime=' + from + '&endTime=' + to).then(
                 getMetricsData(target)
               );
             } else {
-              return backendSrv.get(self.url + '/ws/v1/timeline/metrics?metricNames=' + target.metric + "._" + target.aggregator + '&appId=' +
-                target.app + '&startTime=' + from + '&endTime=' + to).then(
+              return backendSrv.get(self.url + '/ws/v1/timeline/metrics?metricNames=' + target.metric + "._"
+                + target.aggregator + '&appId=' + target.app + '&startTime=' + from + '&endTime=' + to).then(
                 getMetricsData(target)
               );
             }

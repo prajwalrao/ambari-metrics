@@ -80,10 +80,10 @@
 
 
 
-        <li class="tight-form-item" ng-hide="target.hosts">
+        <li class="tight-form-item">
             Aggregator
         </li>
-        <li ng-hide="target.hosts">
+        <li>
             <select ng-model="target.aggregator" class="tight-form-input input-small"
                     ng-options="agg for agg in aggregators"
                     ng-change="targetBlur()">
@@ -97,13 +97,23 @@
     <div class="clearfix"></div>
 </div>
 
-<!--<div class="tight-form">
+<div class="tight-form">
     <ul class="tight-form-list" role="menu">
         <li class="tight-form-item tight-form-align" style="width: 86px">
             <editor-checkbox text="Rate" model="target.shouldComputeRate" change="targetBlur()"></editor-checkbox>
         </li>
 
-        <li class="tight-form-item" ng-hide="!target.shouldComputeRate">
+        <li class="tight-form-item tight-form-align">
+            <editor-checkbox text="Precision" model="target.shouldAddPrecision" change="targetBlur()"></editor-checkbox>
+        </li>
+        <li ng-show="target.shouldAddPrecision">
+            <select ng-model="target.precision" class="tight-form-input input-small"
+                    ng-options="precision for precision in precisions"
+                    ng-change="targetBlur()">
+            </select>
+        </li>
+
+        <!--<li class="tight-form-item" ng-hide="!target.shouldComputeRate">
             <editor-checkbox text="Counter" model="target.isCounter" change="targetBlur()"></editor-checkbox>
         </li>
 
@@ -126,7 +136,7 @@
                    placeholder="reset value" ng-model-onblur
                    ng-blur="targetBlur()"></input>
         </li>
-    </ul>
+    </ul>-->
 
     <div class="clearfix"></div>
-</div>-->
+</div>

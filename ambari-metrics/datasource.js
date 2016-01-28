@@ -75,7 +75,7 @@ define([
           var getMetricsData = function (target) {
             return function (res) {
               console.log('processing metric ' + target.metric);
-              if (!res.metrics[0]) {
+              if (!res.metrics[0] || target.hide) {
                 return $q.when(emptyData(target.metric));
               }
               var series = [];
@@ -102,19 +102,57 @@ define([
             };
 
           };
-
+          var precisionSetting = '';
           var getHostAppIdData = function(target) {
-            return backendSrv.get(self.url + '/ws/v1/timeline/metrics?metricNames=' + target.metric + "&hostname=" +
-              target.hosts + '&appId=' + target.app + '&startTime=' + from + '&endTime=' + to).then(
-              getMetricsData(target)
-            );
+            if (target.shouldAddPrecision) { precisionSetting = '&precision=' + target.precision;
+              } else { precisionSetting = ''; }
+            if (target.shouldAddPrecision && target.shouldComputeRate) {
+              return backendSrv.get(self.url + '/ws/v1/timeline/metrics?metricNames=' + target.metric + "._rate._" + target.aggregator + "&hostname=" +
+                  target.hosts + '&appId=' + target.app + '&startTime=' + from + '&endTime=' + to + precisionSetting).then(
+                  getMetricsData(target)
+                );
+            } else if (target.shouldComputeRate) {
+              return backendSrv.get(self.url + '/ws/v1/timeline/metrics?metricNames=' + target.metric + "._rate._" + target.aggregator + "&hostname=" +
+                  target.hosts + '&appId=' + target.app + '&startTime=' + from + '&endTime=' + to).then(
+                  getMetricsData(target)
+                );
+            } else if (target.shouldAddPrecision){ 
+              return backendSrv.get(self.url + '/ws/v1/timeline/metrics?metricNames=' + target.metric + "._" + target.aggregator + "&hostname=" +
+                  target.hosts + '&appId=' + target.app + '&startTime=' + from + '&endTime=' + to + precisionSetting).then(
+                  getMetricsData(target)
+                );
+            } else {
+              return backendSrv.get(self.url + '/ws/v1/timeline/metrics?metricNames=' + target.metric + "._" + target.aggregator + "&hostname=" +
+                target.hosts + '&appId=' + target.app + '&startTime=' + from + '&endTime=' + to).then(
+                getMetricsData(target)
+              );
+            } 
           };
 
           var getServiceAppIdData = function(target) {
-            return backendSrv.get(self.url + '/ws/v1/timeline/metrics?metricNames=' + target.metric + "._" + target.aggregator + '&appId=' +
-              target.app + '&startTime=' + from + '&endTime=' + to).then(
-              getMetricsData(target)
-            );
+            if (target.shouldAddPrecision) { precisionSetting = '&precision=' + target.precision;
+              } else { precisionSetting = ''; }
+            if (target.shouldAddPrecision && target.shouldComputeRate) {
+              return backendSrv.get(self.url + '/ws/v1/timeline/metrics?metricNames=' + target.metric + "._rate._" + target.aggregator + '&appId=' +
+                target.app + '&startTime=' + from + '&endTime=' + to + precisionSetting).then(
+                getMetricsData(target)
+              );
+            } else if (target.shouldAddPrecision) {
+              return backendSrv.get(self.url + '/ws/v1/timeline/metrics?metricNames=' + target.metric + "._" + target.aggregator + '&appId=' +
+                target.app + '&startTime=' + from + '&endTime=' + to + precisionSetting).then(
+                getMetricsData(target)
+              );
+            } else if (target.shouldComputeRate) {
+              return backendSrv.get(self.url + '/ws/v1/timeline/metrics?metricNames=' + target.metric + "._rate._" + target.aggregator + '&appId=' +
+                target.app + '&startTime=' + from + '&endTime=' + to).then(
+                getMetricsData(target)
+              );
+            } else {
+              return backendSrv.get(self.url + '/ws/v1/timeline/metrics?metricNames=' + target.metric + "._" + target.aggregator + '&appId=' +
+                target.app + '&startTime=' + from + '&endTime=' + to).then(
+                getMetricsData(target)
+              );
+            }
           };
 
           // Time Ranges

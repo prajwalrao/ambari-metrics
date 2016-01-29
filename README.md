@@ -10,6 +10,9 @@ Use **ambari-metrics** to visualize metrics exposed via AMS in Grafana.
   	- [Test Datasource](#testds)
  - [Create Dashboard](#createdash)
  - [Add a Graph](#addgraph)
+ - [Save Dashboard](#savedash)
+ - [Time Ranges](#timerange)
+ - [Edit Panel/Graph](#editpanel)
 
 
 ----------
@@ -152,12 +155,59 @@ sudo service grafana-server start
 
 ![Change Panel Title](screenshots/12-change-panel-title.png)
 
+**To change the Units for your metric**
+
+>	- You can edit the units of your graph by clicking on **Axes & Grid** tab and clicking on "unit" as shown.
+
+![Change Units](screenshots/15-change-units.png)
+
+**To customise your graphs**
+
+> 	- You can customise your graph by clicking on the **Display Styles** tab.
+> 	- For ex: you can change the color of a specific metric by choosing a series specific override at the bottom.
+
+![series specific override](screenshots/17-series-specific-override.png)
+
+
+<a name="savedash"></a>
 **To Save the Dashboard**
 
 > 	- Click on the save icon next to the dashboard list dropdown on the top to save your dashboard.
 
 ![Save Dashboard](screenshots/13-save-dashboard.png)
 
+<a name="editpanel"></a>
+**To Edit a Graph**
 
+> 	- Click on the title of your graph/panel and click on edit.
+
+![Edit Graph](screenshots/19-edit-graph.png)
+
+
+---
+<a name="timerange"></a>
+### Time Ranges
+
+**To change the Time Range**
+
+>	- To change the timerange click on the top right of your UI.
+>		- This setting affects all your graphs inside the dashboard. If you wish to customise time for a specific graph [look here](#timeshift)
+> 	- You can use the quick ranges provided or choose a time range of your choice. You can also choose a refresh duration for your dashboard or leave it at "off" to manually refresh.
+
+![Timerange](screenshots/14-change-timerange.png)
+
+<a name="timeshift"></a>
+**To change the time range of one graph only**
+
+>	- Use this in case you wish to change the time range for a specific graph without affecting the other graphs in your dashboard
+>		- Click on the **Time Range** tab of your Graph
+>		- You can then enter a value in the "Override Relative time" input box
+>		- You will be able to confirm that this change has occured by looking at the top right of your graph which will show the override message.
+>		- You can choose to hide this message if you wish to do so.
+
+![Timerange Override](screenshots/18-override-time.png)
+
+
+---
 
 

@@ -63,9 +63,11 @@ sudo service grafana-server start
 **Add a Datasource**
 >	- Click on "Datasources"
 > 	- Click on "Add New" at the top 
+
 ![add-datasource](screenshots/1-add-datasource.png)
 
 **Add a Datasource (continued)**
+
 > 	1. Name of your Datasource
 >	2. Type = AmbariMetrics
 > 	3. Host+Port of your AMS installation. (usually host:6188) 

@@ -145,6 +145,19 @@ sudo service grafana-server start
 ![Select Options](screenshots/11-choose-agg-rate-precision.png)
 
 
+**To change the title of the Panel**
+
+>	- Click on the "General" tab
+>	- Enter the name to change the title of the panel
+
+![Change Panel Title](screenshots/12-change-panel-title.png)
+
+**To Save the Dashboard**
+
+> 	- Click on the save icon next to the dashboard list dropdown on the top to save your dashboard.
+
+![Save Dashboard](screenshots/13-save-dashboard.png)
+
 
 
 

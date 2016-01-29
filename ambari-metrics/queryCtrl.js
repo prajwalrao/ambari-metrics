@@ -12,7 +12,7 @@ define([
         $scope.init = function() {
           $scope.target.errors = validateTarget($scope.target);
           $scope.aggregators = ['avg', 'sum', 'min', 'max'];
-          $scope.precisions = ['seconds', 'minutes', 'hours'];
+          $scope.precisions = ['seconds', 'minutes', 'hours', 'days'];
 
           if (!$scope.target.aggregator) {
             $scope.target.aggregator = 'avg';

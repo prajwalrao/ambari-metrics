@@ -203,7 +203,7 @@ sudo service grafana-server start
 >		- Click on the **Time Range** tab of your Graph
 >		- You can then enter a value in the "Override Relative time" input box
 >		- You will be able to confirm that this change has occured by looking at the top right of your graph which will show the override message.
->		- You can choose to hide this message if you wish to do so.
+>		- You can choose to hide this message if you wish to do so (by chekcing the "hide time override info")
 
 ![Timerange Override](screenshots/18-override-time.png)
 

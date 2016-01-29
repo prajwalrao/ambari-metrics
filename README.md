@@ -2,8 +2,10 @@
 
 Use **ambari-metrics** to visualize metrics exposed via AMS in Grafana. 
 
-*If you already have Ambari Metrics View as a part of your AMS Install, [go here](#createdash) to get started*
+### If you already have Ambari Metrics View as a part of your AMS Install, [go here](#createdash) to get started
 
+
+**ToC**
  - [Install Grafana](#installg)
  - [Install Datasource Plugin](#installam)
  - [Add Datasource to Grafana](#addds)

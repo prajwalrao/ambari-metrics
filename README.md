@@ -142,7 +142,7 @@ sudo service grafana-server start
 > 	- You can choose to enable Rate by selecting the checkbox.
 > 	- You can specify precision by checking the box and then selecting "days, hours, minutes or seconds"
 
-~[Select Options](screenshots/11-choose-agg-rate-precision.png)
+![Select Options](screenshots/11-choose-agg-rate-precision.png)
 
 
 

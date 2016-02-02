@@ -8,6 +8,7 @@ Use **ambari-metrics** to visualize metrics exposed via AMS in Grafana.
 **ToC**
  - [Install Grafana](#installg)
  - [Install Datasource Plugin](#installam)
+ - [Access Grafana](#accessgraf)
  - [Add Datasource to Grafana](#addds)
   	- [Test Datasource](#testds)
  - [Create Dashboard](#createdash)
@@ -55,6 +56,13 @@ sudo tar zxvf ambari-metrics.tar.gz -C /usr/share/grafana/public/app/plugins/dat
 
 ```
 sudo service grafana-server start
+```
+
+<a name="accessgraf"></a> 
+### Access Grafana
+
+```
+http://AMSHOST:3000 
 ```
 
 ---

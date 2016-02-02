@@ -26,7 +26,7 @@ Use **ambari-metrics** to visualize metrics exposed via AMS in Grafana.
 ### Install Grafana
 
 
-You can install Grafana on any host.  It does not need to be co-located with Ambari Server.  The only requirement is that it has network access to Ambari Server.
+You can install Grafana on any host.  It does not need to be co-located with Ambari Metrics Collector.  The only requirement is that it has network access to Ambari Metrics Collector.
 
 **Install on CentOS/Red Hat:**
 ```
@@ -62,7 +62,7 @@ sudo service grafana-server start
 ### Access Grafana
 
 ```
-http://AMSHOST:3000 
+http://GRAFANA_HOST:3000 
 ```
 
 ---

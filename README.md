@@ -1,8 +1,8 @@
-# AMS Datasource Plugin for Grafana
+# AMS (Ambari Metrics Service) Datasource Plugin for Grafana
 
 Use **ambari-metrics** to visualize metrics exposed via AMS in Grafana. 
 
-### If you already have Ambari Metrics View as a part of your AMS Install, [go here](#createdash) to get started
+### If you already have Ambari Metrics UI as a part of your AMS Install, [go here](#createdash) to get started
 
 
 **ToC**
@@ -48,7 +48,7 @@ sudo rpm -i --nodeps grafana-2.6.0-1.x86_64.rpm
 
 ```
 sudo wget https://github.com/prajwalrao/ambari-metrics/raw/master/dist/ambari-metrics.tar.gz
-sudo tar zxvf ambari-grafana.tgz -C /usr/share/grafana/public/app/plugins/datasource
+sudo tar zxvf ambari-metrics.tar.gz -C /usr/share/grafana/public/app/plugins/datasource
 ```
 
 ### Start Grafana

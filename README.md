@@ -2,6 +2,22 @@
 
 Use **ambari-metrics** to visualize metrics exposed via AMS in Grafana. 
 
+---
+
+#### This project is now a part of Apache Ambari and the latest version of the plugin can always be found below
+
+https://github.com/apache/ambari/tree/trunk/ambari-metrics/ambari-metrics-grafana
+
+##Project related Apache JIRAs##
+
+[![JIRA issue](https://img.shields.io/jira/issue/https/issues.apache.org/jira/AMBARI-14893.svg)](https://issues.apache.org/jira/browse/AMBARI-14893)
+
+[![JIRA issue](https://img.shields.io/jira/issue/https/issues.apache.org/jira/AMBARI-14985.svg)](https://issues.apache.org/jira/browse/AMBARI-14985)
+
+[![JIRA issue](https://img.shields.io/jira/issue/https/issues.apache.org/jira/AMBARI-14999.svg)](https://issues.apache.org/jira/browse/AMBARI-14999)
+
+
+<!--
 ### If you already have Ambari Metrics UI as a part of your AMS Install, [go here](#createdash) to get started
 
 
@@ -221,5 +237,4 @@ http://GRAFANA_HOST:3000
 
 
 ---
-
-
+-->

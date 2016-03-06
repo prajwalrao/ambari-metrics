@@ -18,6 +18,15 @@ https://github.com/apache/ambari/tree/trunk/ambari-metrics/ambari-metrics-grafan
 
 [![JIRA issue](https://img.shields.io/jira/issue/https/issues.apache.org/jira/AMBARI-15021.svg)](https://issues.apache.org/jira/browse/AMBARI-15021)
 
+[![JIRA issue](https://img.shields.io/jira/issue/https/issues.apache.org/jira/AMBARI-15255.svg)](https://issues.apache.org/jira/browse/AMBARI-15255)
+
+[![JIRA issue](https://img.shields.io/jira/issue/https/issues.apache.org/jira/AMBARI-15257.svg)](https://issues.apache.org/jira/browse/AMBARI-15257)
+
+[![JIRA issue](https://img.shields.io/jira/issue/https/issues.apache.org/jira/AMBARI-15271.svg)](https://issues.apache.org/jira/browse/AMBARI-15271)
+
+[![JIRA issue](https://img.shields.io/jira/issue/https/issues.apache.org/jira/AMBARI-15278.svg)](https://issues.apache.org/jira/browse/AMBARI-15278)
+
+
 
 <!--
 ### If you already have Ambari Metrics UI as a part of your AMS Install, [go here](#createdash) to get started

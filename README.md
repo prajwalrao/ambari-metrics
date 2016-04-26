@@ -10,49 +10,7 @@ https://github.com/apache/ambari/tree/trunk/ambari-metrics/ambari-metrics-grafan
 
 ##Project related Apache JIRAs##
 
-[![JIRA issue](https://img.shields.io/jira/issue/https/issues.apache.org/jira/AMBARI-14893.svg)](https://issues.apache.org/jira/browse/AMBARI-14893)
-
-[![JIRA issue](https://img.shields.io/jira/issue/https/issues.apache.org/jira/AMBARI-14985.svg)](https://issues.apache.org/jira/browse/AMBARI-14985)
-
-[![JIRA issue](https://img.shields.io/jira/issue/https/issues.apache.org/jira/AMBARI-14999.svg)](https://issues.apache.org/jira/browse/AMBARI-14999)
-
-[![JIRA issue](https://img.shields.io/jira/issue/https/issues.apache.org/jira/AMBARI-15021.svg)](https://issues.apache.org/jira/browse/AMBARI-15021)
-
-[![JIRA issue](https://img.shields.io/jira/issue/https/issues.apache.org/jira/AMBARI-15255.svg)](https://issues.apache.org/jira/browse/AMBARI-15255)
-
-[![JIRA issue](https://img.shields.io/jira/issue/https/issues.apache.org/jira/AMBARI-15257.svg)](https://issues.apache.org/jira/browse/AMBARI-15257)
-
-[![JIRA issue](https://img.shields.io/jira/issue/https/issues.apache.org/jira/AMBARI-15271.svg)](https://issues.apache.org/jira/browse/AMBARI-15271)
-
-[![JIRA issue](https://img.shields.io/jira/issue/https/issues.apache.org/jira/AMBARI-15278.svg)](https://issues.apache.org/jira/browse/AMBARI-15278)
-
-[![JIRA issue](https://img.shields.io/jira/issue/https/issues.apache.org/jira/AMBARI-15326.svg)](https://issues.apache.org/jira/browse/AMBARI-15326)
-
-[![JIRA issue](https://img.shields.io/jira/issue/https/issues.apache.org/jira/AMBARI-15343.svg)](https://issues.apache.org/jira/browse/AMBARI-15343)
-
-[![JIRA issue](https://img.shields.io/jira/issue/https/issues.apache.org/jira/AMBARI-15444.svg)](https://issues.apache.org/jira/browse/AMBARI-15444)
-
-[![JIRA issue](https://img.shields.io/jira/issue/https/issues.apache.org/jira/AMBARI-15450.svg)](https://issues.apache.org/jira/browse/AMBARI-15450)
-
-[![JIRA issue](https://img.shields.io/jira/issue/https/issues.apache.org/jira/AMBARI-15472.svg)](https://issues.apache.org/jira/browse/AMBARI-15472)
-
-[![JIRA issue](https://img.shields.io/jira/issue/https/issues.apache.org/jira/AMBARI-15541.svg)](https://issues.apache.org/jira/browse/AMBARI-15541)
-
-[![JIRA issue](https://img.shields.io/jira/issue/https/issues.apache.org/jira/AMBARI-15570.svg)](https://issues.apache.org/jira/browse/AMBARI-15570)
-
-[![JIRA issue](https://img.shields.io/jira/issue/https/issues.apache.org/jira/AMBARI-15672.svg)](https://issues.apache.org/jira/browse/AMBARI-15672)
-
-[![JIRA issue](https://img.shields.io/jira/issue/https/issues.apache.org/jira/AMBARI-15695.svg)](https://issues.apache.org/jira/browse/AMBARI-15695)
-
-[![JIRA issue](https://img.shields.io/jira/issue/https/issues.apache.org/jira/AMBARI-15811.svg)](https://issues.apache.org/jira/browse/AMBARI-15811)
-
-[![JIRA issue](https://img.shields.io/jira/issue/https/issues.apache.org/jira/AMBARI-15868.svg)](https://issues.apache.org/jira/browse/AMBARI-15868)
-
-[![JIRA issue](https://img.shields.io/jira/issue/https/issues.apache.org/jira/AMBARI-16000.svg)](https://issues.apache.org/jira/browse/AMBARI-16000)
-
-[![JIRA issue](https://img.shields.io/jira/issue/https/issues.apache.org/jira/AMBARI-16073.svg)](https://issues.apache.org/jira/browse/AMBARI-16073)
-
-[![JIRA issue](https://img.shields.io/jira/issue/https/issues.apache.org/jira/AMBARI-16105.svg)](https://issues.apache.org/jira/browse/AMBARI-16105)
+[![JIRA issue](https://img.shields.io/jira/issue/https/issues.apache.org/jira/AMBARI-14893.svg)](https://issues.apache.org/jira/browse/AMBARI-14893) [![JIRA issue](https://img.shields.io/jira/issue/https/issues.apache.org/jira/AMBARI-14985.svg)](https://issues.apache.org/jira/browse/AMBARI-14985) [![JIRA issue](https://img.shields.io/jira/issue/https/issues.apache.org/jira/AMBARI-14999.svg)](https://issues.apache.org/jira/browse/AMBARI-14999) [![JIRA issue](https://img.shields.io/jira/issue/https/issues.apache.org/jira/AMBARI-15021.svg)](https://issues.apache.org/jira/browse/AMBARI-15021) [![JIRA issue](https://img.shields.io/jira/issue/https/issues.apache.org/jira/AMBARI-15255.svg)](https://issues.apache.org/jira/browse/AMBARI-15255) [![JIRA issue](https://img.shields.io/jira/issue/https/issues.apache.org/jira/AMBARI-15257.svg)](https://issues.apache.org/jira/browse/AMBARI-15257) [![JIRA issue](https://img.shields.io/jira/issue/https/issues.apache.org/jira/AMBARI-15271.svg)](https://issues.apache.org/jira/browse/AMBARI-15271) [![JIRA issue](https://img.shields.io/jira/issue/https/issues.apache.org/jira/AMBARI-15278.svg)](https://issues.apache.org/jira/browse/AMBARI-15278) [![JIRA issue](https://img.shields.io/jira/issue/https/issues.apache.org/jira/AMBARI-15326.svg)](https://issues.apache.org/jira/browse/AMBARI-15326) [![JIRA issue](https://img.shields.io/jira/issue/https/issues.apache.org/jira/AMBARI-15343.svg)](https://issues.apache.org/jira/browse/AMBARI-15343) [![JIRA issue](https://img.shields.io/jira/issue/https/issues.apache.org/jira/AMBARI-15444.svg)](https://issues.apache.org/jira/browse/AMBARI-15444) [![JIRA issue](https://img.shields.io/jira/issue/https/issues.apache.org/jira/AMBARI-15450.svg)](https://issues.apache.org/jira/browse/AMBARI-15450) [![JIRA issue](https://img.shields.io/jira/issue/https/issues.apache.org/jira/AMBARI-15472.svg)](https://issues.apache.org/jira/browse/AMBARI-15472) [![JIRA issue](https://img.shields.io/jira/issue/https/issues.apache.org/jira/AMBARI-15541.svg)](https://issues.apache.org/jira/browse/AMBARI-15541) [![JIRA issue](https://img.shields.io/jira/issue/https/issues.apache.org/jira/AMBARI-15570.svg)](https://issues.apache.org/jira/browse/AMBARI-15570) [![JIRA issue](https://img.shields.io/jira/issue/https/issues.apache.org/jira/AMBARI-15672.svg)](https://issues.apache.org/jira/browse/AMBARI-15672) [![JIRA issue](https://img.shields.io/jira/issue/https/issues.apache.org/jira/AMBARI-15695.svg)](https://issues.apache.org/jira/browse/AMBARI-15695) [![JIRA issue](https://img.shields.io/jira/issue/https/issues.apache.org/jira/AMBARI-15811.svg)](https://issues.apache.org/jira/browse/AMBARI-15811) [![JIRA issue](https://img.shields.io/jira/issue/https/issues.apache.org/jira/AMBARI-15868.svg)](https://issues.apache.org/jira/browse/AMBARI-15868) [![JIRA issue](https://img.shields.io/jira/issue/https/issues.apache.org/jira/AMBARI-16000.svg)](https://issues.apache.org/jira/browse/AMBARI-16000) [![JIRA issue](https://img.shields.io/jira/issue/https/issues.apache.org/jira/AMBARI-16073.svg)](https://issues.apache.org/jira/browse/AMBARI-16073) [![JIRA issue](https://img.shields.io/jira/issue/https/issues.apache.org/jira/AMBARI-16105.svg)](https://issues.apache.org/jira/browse/AMBARI-16105)
 
 <!--
 ### If you already have Ambari Metrics UI as a part of your AMS Install, [go here](#createdash) to get started
